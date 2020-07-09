@@ -15,7 +15,10 @@
   4. Room Member Ids
   5. Room unread messages count
   6. Display all unread messages
-
+  
+  
+  sample request
+![https://res.cloudinary.com/dsplp2pmt/image/upload/v1594304064/Screenshot_from_2020-07-09_19-37-47_kfsjtm.png](https://res.cloudinary.com/dsplp2pmt/image/upload/v1594304064/Screenshot_from_2020-07-09_19-37-47_kfsjtm.png)
         Sample  Response
 
   ```javascript
