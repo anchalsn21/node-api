@@ -4,6 +4,8 @@
 **Using Mlab for Data storage**
 
 
+**Heroku deployed base url:**  **https://node-api-testapp.herokuapp.com/**
+
   This dummy project is for the  creating an api end point to display following data of all the rooms by just passing a **token** field in **headers** with jwt token
   received via login api
 
