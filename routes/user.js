@@ -14,11 +14,15 @@ const utility = require("../utils/utility");
  */
 
 router.post("/create", async (req, res) => {
+  try{
   const data = await db.users.find({ email: req.body.email });
   if (data.length)
-    return res.json({ staus: 409, message: "Already existing", data: [] });
+    return res.json({ status: 409, message: "Already existing", data: [] });
   const user = await db.users.create(req.body);
-  return res.json({ staus: 200, message: "Sign up successful", data: user });
+  return res.json({ status: 200, message: "Sign up successful", data: user });
+  }catch(err){
+    return res.json({status:400,error:err})
+  }
 });
 
 /**
